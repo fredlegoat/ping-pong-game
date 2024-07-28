@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <title>Site de let's go man</title>
+      <link rel="stylesheet" href="style.css">
+      <!----->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+
+</head>
+<body>
+      <div class="wrapper">
+
+            <!--------------- navbar ---------------->
+            <nav>
+                  <span id="brand">
+                        <a href="index.html">fred</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="contact.html">contact<span>.</span></a></li>
+                        <li><a href="ping-pong.html">ping pong<span>.</span></a></li>
+                  </ul>
+            </nav>
+            <!--------------- navbar ---------------->
+
+
+            <!---------------la-phrase-magique--------------->
+            <div class="hero">
+                  <div class="header">
+                        <h1 class="line anim-typewriter">Une chose à dire : LET'S GOOOO.</h1>
+                  </div>
+            </div>
+            <div class="scroll-down"></div>
+            <!---------------la-phrase-magique--------------->
+
+
+            <!---------------footer--------------->
+
+            <div class="footer">
+                  <div class="container">
+                        <br><br>
+
+                        <div class="collab">
+                              <div class="row">
+                                    <div class="col-lg-12">
+                                          <p>Propre et efficace, que demander de plus.</p>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <br>
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="info">
+                              <div class="row">
+                                    <div class="col-lg-4" id="personal">
+                                          <p>me retrouver avec</p>
+                                          <h4> @LeFrxd</h4>
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-lg-4" id="media">
+                                          <p>sur</p>
+                                          <ul>
+                                                <li id="tw">tw</li>
+                                                <li id="yt">yt</li>
+                                                <li id="ig">ig</li>
+                                          </ul>
+                                          <br><br>
+                                    </div>
+
+                                    <div class="col-lg-4" id="address">
+                                          <p>pour les gens un peu plus pro</p>
+                                                <h4>ramfrederic9@gmail.com</h4>
+                                          <br><br>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!---------------footer--------------->
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <script type="text/javascript">
+
+
+      //animation-de-la-navbar// 
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+      //animation-de-la-navbar// 
+
+
+      </script>
+</body>
+</html>
